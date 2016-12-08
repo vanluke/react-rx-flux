@@ -1,0 +1,49 @@
+$counter-button-plus-bgcolor: #823a8c;
+$counter-button-minus-bgcolor: #005dff;
+$counter-button-default-bgcolor: #d35400;
+$counter-button-hover-bgcolor: #27ae60;
+$white: #fff;
+
+
+.c-counter {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  &__item {
+    padding: 1rem;
+    display: inline-block;
+  }
+
+  &__counter {
+
+  }
+
+  &__count {
+    font-size: 240%;
+  }
+
+  &__button {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    margin: .67rem;
+    font-size: 120%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    padding: .7rem;
+    background: $counter-button-default-bgcolor;
+    color: $white;
+    transition: background-color .3s;
+    &:hover, &:focus {
+      background: $counter-button-hover-bgcolor;
+    }
+    &--plus {
+      background: $counter-button-plus-bgcolor;
+    }
+    &--minus {
+      background: $counter-button-minus-bgcolor;
+    }
+  }
+}
