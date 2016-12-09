@@ -4,3 +4,15 @@ $app-bg-color: #fff;
   background: $app-bg-color;
   width: 100%;
 }
+
+.c-app {
+  &__header {
+    position: relative;
+    display: block;
+    font-size: 130%;
+     text-align: center;
+    &--h1 {
+      font-size: 210%;
+    }
+  }
+}
