@@ -4,11 +4,8 @@
   "description": "Reactive flux implementation",
   "main": "index.js",
   "scripts": {
-    "start:server": "node_modules/.bin/nodemon",
     "start:client": "node_modules/.bin/webpack-dev-server --port=3000 --inline --progress --history-api-fallback --colors",
-    "start": "NODE_ENV=development npm run start:server | npm run start:client",
-    "test": "node ./node_modules/mocha/bin/mocha --compilers js:babel-core/register --require ./config/test.config.js 'src/**/**/*.test.js' --recursive",
-    "test:watch": "npm run test -- --watch"
+    "start": "NODE_ENV=development npm run start:client"
   },
   "repository": {
     "type": "git",
